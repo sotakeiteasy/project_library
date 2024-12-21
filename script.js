@@ -1,11 +1,14 @@
 const myLibrary = [];
 
-function movie(title, author, length, year, isWatch) {
-    this.title = title;
-    this.author = author;
-    this.length = length;
-    this.year = year;
-    this.isWatch = isWatch;
+class movie {
+    constructor(title, author, length, year, isWatch){
+        this.title = title;
+        this.author = author;
+        this.length = length;
+        this.year = year;
+        this.isWatch = isWatch;
+    }
+    
 }
 
 function addMovieToLibrary(title, author, length, year, isWatch) {
